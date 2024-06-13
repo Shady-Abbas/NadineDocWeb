@@ -1,0 +1,120 @@
+.bold{
+    display: inline;
+    font-weight: bold;
+    }
+    
+    *{
+      margin: 0;
+      padding:0;
+      background-color: #280137;
+      color: #D3D3D3;
+    }
+    
+    html{
+      scroll-behavior: smooth;
+    }
+    
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: sans-serif;
+    }
+    
+    section{
+      margin-top: 40px;
+    }
+    
+    #navbar{
+      width: 100%;
+      border-bottom: 1px solid;
+    }
+    
+    #navbar li{
+      color: #4d4e53;
+      border-top: 1px solid;
+      list-style: none;
+    }
+    
+    #navbar a{
+      display: block;
+      padding: 10px 30px;
+      color: #280137;
+      background-color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+      transition: text-indent .3s ease-in-out;
+    }
+    
+    #navbar a:hover{
+      font-weight: 500;
+      text-indent: 5px;
+    }
+    
+    p{
+      margin: 10px;
+    }
+    
+    ul{
+      margin-left: 30px;
+    }
+    
+    #main-doc{
+      margin: 0 auto;
+    }
+    
+    header{
+      margin: 10px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: 500;
+    }
+    
+    code{
+      display: block;
+      text-align: left;
+      white-space: pre;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.5;
+      padding: 0 15px;
+      margin: 10px;
+      border-radius: 5px;
+      background-color: purple;
+    }
+    
+    .image{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer{
+      padding: 30px;
+      text-align: center;
+      color: #4d4e53;
+    }
+    
+    @media only screen and (min-width: 815px){
+      body{
+        flex-direction: row;
+      }
+      #navbar{
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        resize: horizontal;
+        overflow-x: scroll;
+      }
+      .image{
+        width: 70%;
+        margin-left: 20px;
+      }
+      #main-doc{
+        margin: 0 20px;
+        margin-left: 350px;
+      }
+    }
+    
